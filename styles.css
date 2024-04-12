@@ -124,7 +124,7 @@ p {
     gap: 12px;
 }
 
-.category__name h4 {
+.category__name h3 {
     font-weight: 500;
 }
 
@@ -241,7 +241,7 @@ p {
         padding: 0 14px;
     }
 
-    .category__name h4,
+    .category__name h3,
     .category__score {
         font-size: 16px;
     }
