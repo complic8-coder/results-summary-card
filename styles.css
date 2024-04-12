@@ -188,6 +188,10 @@ p {
         display: block; /* enables scrolling */
     }
 
+    p {
+        font-size: 16px;
+    }
+
     .card {
         width: 100%;
         height: fit-content;
@@ -217,17 +221,9 @@ p {
         font-size: 55px;
     }
 
-    .results-score p {
-        font-size: 16px;
-    }
-
     .results-overall {
         font-size: 24px;
         margin-bottom: 8px;
-    }
-    
-    .results-desc {
-        font-size: 16px;
     }
 
     .summary {
@@ -243,10 +239,7 @@ p {
         padding: 0 14px;
     }
 
-    .category__name {
-        font-size: 16px;
-    }
-
+    .category__name,
     .category__score {
         font-size: 16px;
     }
