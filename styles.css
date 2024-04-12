@@ -60,7 +60,7 @@ p {
     font-weight: 500;
 }
 
-.results-score {
+.results__score {
     width: 200px;
     height: 200px;
     margin: 34px auto 28px;
@@ -72,26 +72,26 @@ p {
     align-items: center;
 }
 
-.results-score .score__value {
+.results__score .score__value {
     margin-bottom: -6px;
     color: var(--white);
     font-size: 70px;
     font-weight: 800;
 }
 
-.results-score p {
+.results__score p {
     color: hsla(241, 100%, 89%, 0.6);
     font-weight: 500;
 }
 
-.results-overall {
+.results__overall {
     color: var(--white);
     font-size: 32px;
     margin-bottom: 15px;
     font-weight: 500;
 }
 
-.results-desc {
+.results__desc {
     width: 260px;
     margin: auto;
     color: var(--light-lavender);
@@ -161,7 +161,7 @@ p {
 
 
 
-.continue-btn {
+.btn--continue {
     width: 100%;
     margin-top: 40px;
     padding: 16px 0;
@@ -174,7 +174,7 @@ p {
     cursor: pointer;
 }
 
-.continue-btn:hover {
+.btn--continue:hover {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
@@ -210,18 +210,18 @@ p {
         background: linear-gradient(rgb(102, 67, 255), hsl(241, 81%, 54%));
     }
 
-    .results-score {
+    .results__score {
         width: 140px;
         height: 140px;
         margin: 20px auto 24px;
     }
 
-    .results-score .score__value {
+    .results__score .score__value {
         margin-bottom: 0;
         font-size: 55px;
     }
 
-    .results-overall {
+    .results__overall {
         font-size: 24px;
         margin-bottom: 8px;
     }
@@ -244,7 +244,7 @@ p {
         font-size: 16px;
     }
 
-    .continue-btn {
+    .btn--continue {
         margin-top: 24px;
     }
 }
