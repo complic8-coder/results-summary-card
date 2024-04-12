@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+.card {
+    width: 736px;
+    height: 512px;
+    margin: 0 40px;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 6px 6px 60px 0 hsla(234, 85%, 45%, .1);
+}
+
+.card__section {
+    width: 50%;
+    padding: 38px;
+}
+
+.card__header {
+    font-size: 24px;
+}
+
+/* || RESULTS */
+
+.results {
+    border-radius: 30px;
+    background: linear-gradient(rgb(102, 67, 255), hsl(241, 81%, 54%));
+    text-align: center;
+}
+
+.results .card__header {
+    color: var(--light-lavender);
+    font-weight: 500;
+}
+
+.results-score {
+    width: 200px;
+    height: 200px;
+    margin: 34px auto 28px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.results-score .score__value {
+    margin-bottom: -6px;
+    color: var(--white);
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.results-score p {
+    color: hsla(241, 100%, 89%, 0.6);
+    font-weight: 500;
+}
+
+.results-overall {
+    color: var(--white);
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.results-desc {
+    width: 260px;
+    margin: auto;
+    color: var(--light-lavender);
+}
+
+/* || SUMMARY */
+
+.summary .card__header {
+    margin-bottom: 28px;
+    color: var(--dark-gray-blue);
+}
+
+.summary__list {
+    display: grid;
+    grid-template-rows: repeat(4, 56px);
+    gap: 16px;
+}
+
+.summary__list .category {
+    padding: 0 18px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category__name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.category__score {
+    color: hsla(224, 30%, 27%, 0.6);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+
+.category__score .score {
+    color: var(--dark-gray-blue);
+}
+
+/* categories */
+
+.reaction {
+    background: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+
+
+.continue-btn {
+    width: 100%;
+    margin-top: 40px;
+    padding: 16px 0;
+    color: var(--white);
+    border: none;
+    border-radius: 40px;
+    background: var(--dark-gray-blue);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.continue-btn:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 750px) {
+    html,
+    body {
+        height: auto;
+    }
+
+    body {
+        display: block; /* enables scrolling */
+    }
+
+    .card {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .card__section {
+        width: 100%;
+        padding: 20px 20px 40px;
+    }
+
+    .results {
+        border-radius: 0 0 30px 30px;
+        background: linear-gradient(rgb(102, 67, 255), hsl(241, 81%, 54%));
+    }
+
+    .results-score {
+        width: 140px;
+        height: 140px;
+        margin: 20px auto 24px;
+    }
+
+    .results-score .score__value {
+        margin-bottom: 0;
+        font-size: 55px;
+    }
+
+    .results-score p {
+        font-size: 16px;
+    }
+
+    .results-overall {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    
+    .results-desc {
+        font-size: 16px;
+    }
+
+    .summary {
+        padding: 22px 32px;
+    }
+
+    .summary .card__header {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+    .summary__list .category {
+        padding: 0 14px;
+    }
+
+    .category__name {
+        font-size: 16px;
+    }
+
+    .category__score {
+        font-size: 16px;
+    }
+
+    .continue-btn {
+        margin-top: 24px;
+    }
+}
