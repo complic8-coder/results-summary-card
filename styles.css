@@ -162,18 +162,21 @@ p {
 }
 
 
+.btn {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
 
 .btn--continue {
     width: 100%;
     margin-top: 40px;
     padding: 16px 0;
     color: var(--white);
-    border: none;
     border-radius: 40px;
     background: var(--dark-gray-blue);
     font-size: 18px;
     font-weight: 500;
-    cursor: pointer;
 }
 
 .btn--continue:hover {
